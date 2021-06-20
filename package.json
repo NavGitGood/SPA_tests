@@ -1,0 +1,28 @@
+{
+  "name": "spa_tests",
+  "version": "1.0.0",
+  "description": "Cypress UI tests for SPA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:run:happy_path": "cypress run --spec cypress/integration/happy_path.spec.ts",
+    "cypress:run_one_test_folder": "cypress open --config integrationFolder=cypress/integration/examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NavGitGood/SPA_tests.git"
+  },
+  "author": "Navneet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NavGitGood/SPA_tests/issues"
+  },
+  "homepage": "https://github.com/NavGitGood/SPA_tests#readme",
+  "devDependencies": {
+    "cypress": "^7.5.0"
+  },
+  "dependencies": {
+    "typescript": "^4.3.4"
+  }
+}
