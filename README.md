@@ -1,2 +1,3 @@
-# SPA_tests
+# SPA_tests #
+
 Cypress UI tests for SPA
