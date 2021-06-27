@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
-    "cypress:run:happy_path": "cypress run --spec cypress/integration/happy_path.spec.ts",
+    "cypress:run:full_path": "cypress run --spec cypress/integration/full_path.spec.ts",
     "cypress:run_one_test_folder": "cypress open --config integrationFolder=cypress/integration/examples"
   },
   "repository": {
