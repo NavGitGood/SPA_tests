@@ -1,0 +1,34 @@
+{
+    "income_form": {
+        "income": "500",
+        "budget_date": "06/28/2021"
+    },
+    "base_page_before": {
+        "income": "500",
+        "budget": "400",
+        "expenses": "0",
+        "balance": "400",
+        "savings": "500"
+    },
+    "expenses": [
+        {
+            "category": "Fixed",
+            "type": "Rent",
+            "amount": "1",
+            "date": "06/01/2021"
+        },
+        {
+            "category": "Variable",
+            "type": "some value",
+            "amount": "2",
+            "date": "06/02/2021"
+        }
+    ],
+    "base_page_after": {
+        "income": "500",
+        "budget": "400",
+        "expenses": "3",
+        "balance": "397",
+        "savings": "497"
+    }
+}
