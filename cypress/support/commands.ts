@@ -23,3 +23,28 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+declare namespace Cypress {
+    interface Chainable<Subject> {
+        selectDate: typeof selectDate,
+        freshType: (value: string) => void
+    }
+}
+
+function selectDate(id: string, date: string) {
+    let day = date.split("/")[1];
+    day = day.split("")[0] === "0" ? day.split("")[1] : day;
+    cy.get(id)
+    .click();
+    cy.get('#ui-datepicker-div [data-month="5"][data-year="2021"]')
+    .contains("a", day)
+    .click();
+}
+
+function freshType(element, value: string) {
+    // cy.get(id).clear().type(value);
+    cy.wrap(element).clear().type(value);
+}
+
+Cypress.Commands.add('selectDate', selectDate)
+Cypress.Commands.add('freshType', { prevSubject: true }, freshType)
